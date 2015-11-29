@@ -1,0 +1,677 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		359DFADA1C075E3F00CD7642 /* WeatherModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 359DFAD91C075E3F00CD7642 /* WeatherModel.swift */; };
+		35D323CA1C03090100520CB5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35D323C91C03090100520CB5 /* AppDelegate.swift */; };
+		35D323CC1C03090100520CB5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35D323CB1C03090100520CB5 /* ViewController.swift */; };
+		35D323CF1C03090100520CB5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 35D323CD1C03090100520CB5 /* Main.storyboard */; };
+		35D323D11C03090100520CB5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 35D323D01C03090100520CB5 /* Assets.xcassets */; };
+		35D323D41C03090100520CB5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 35D323D21C03090100520CB5 /* LaunchScreen.storyboard */; };
+		35D323DF1C03090100520CB5 /* SherryWeatherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35D323DE1C03090100520CB5 /* SherryWeatherTests.swift */; };
+		35D323EA1C03090100520CB5 /* SherryWeatherUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35D323E91C03090100520CB5 /* SherryWeatherUITests.swift */; };
+		35D3240F1C030A4A00520CB5 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35D324021C0309F600520CB5 /* Alamofire.framework */; };
+		35D324101C030A4A00520CB5 /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 35D324021C0309F600520CB5 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		35D324151C030A6C00520CB5 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35D324141C030A6C00520CB5 /* SwiftyJSON.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		35D323DB1C03090100520CB5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 35D323BE1C03090100520CB5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 35D323C51C03090100520CB5;
+			remoteInfo = SherryWeather;
+		};
+		35D323E61C03090100520CB5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 35D323BE1C03090100520CB5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 35D323C51C03090100520CB5;
+			remoteInfo = SherryWeather;
+		};
+		35D324011C0309F600520CB5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 35D323F71C0309F600520CB5 /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F8111E3319A95C8B0040E7D1;
+			remoteInfo = "Alamofire iOS";
+		};
+		35D324031C0309F600520CB5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 35D323F71C0309F600520CB5 /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F8111E3E19A95C8B0040E7D1;
+			remoteInfo = "Alamofire iOS Tests";
+		};
+		35D324051C0309F600520CB5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 35D323F71C0309F600520CB5 /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4DD67C0B1A5C55C900ED2280;
+			remoteInfo = "Alamofire OSX";
+		};
+		35D324071C0309F600520CB5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 35D323F71C0309F600520CB5 /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F829C6B21A7A94F100A2CD59;
+			remoteInfo = "Alamofire OSX Tests";
+		};
+		35D324091C0309F600520CB5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 35D323F71C0309F600520CB5 /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4CF626EF1BA7CB3E0011A099;
+			remoteInfo = "Alamofire tvOS";
+		};
+		35D3240B1C0309F600520CB5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 35D323F71C0309F600520CB5 /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4CF626F81BA7CB3E0011A099;
+			remoteInfo = "Alamofire tvOS Tests";
+		};
+		35D3240D1C0309F600520CB5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 35D323F71C0309F600520CB5 /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = E4202FE01B667AA100C997FB;
+			remoteInfo = "Alamofire watchOS";
+		};
+		35D324111C030A4A00520CB5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 35D323F71C0309F600520CB5 /* Alamofire.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = F8111E3219A95C8B0040E7D1;
+			remoteInfo = "Alamofire iOS";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		35D324131C030A4B00520CB5 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				35D324101C030A4A00520CB5 /* Alamofire.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		359DFAD91C075E3F00CD7642 /* WeatherModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherModel.swift; sourceTree = "<group>"; };
+		35D323C61C03090100520CB5 /* SherryWeather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SherryWeather.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		35D323C91C03090100520CB5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		35D323CB1C03090100520CB5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		35D323CE1C03090100520CB5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		35D323D01C03090100520CB5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		35D323D31C03090100520CB5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		35D323D51C03090100520CB5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		35D323DA1C03090100520CB5 /* SherryWeatherTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SherryWeatherTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		35D323DE1C03090100520CB5 /* SherryWeatherTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SherryWeatherTests.swift; sourceTree = "<group>"; };
+		35D323E01C03090100520CB5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		35D323E51C03090100520CB5 /* SherryWeatherUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SherryWeatherUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		35D323E91C03090100520CB5 /* SherryWeatherUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SherryWeatherUITests.swift; sourceTree = "<group>"; };
+		35D323EB1C03090100520CB5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		35D323F71C0309F600520CB5 /* Alamofire.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Alamofire.xcodeproj; path = "../../第三方库/Alamofire-master/Alamofire.xcodeproj"; sourceTree = "<group>"; };
+		35D324141C030A6C00520CB5 /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		35D323C31C03090100520CB5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				35D3240F1C030A4A00520CB5 /* Alamofire.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		35D323D71C03090100520CB5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		35D323E21C03090100520CB5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		35D323BD1C03090100520CB5 = {
+			isa = PBXGroup;
+			children = (
+				35D324141C030A6C00520CB5 /* SwiftyJSON.swift */,
+				35D323F71C0309F600520CB5 /* Alamofire.xcodeproj */,
+				35D323C81C03090100520CB5 /* SherryWeather */,
+				35D323DD1C03090100520CB5 /* SherryWeatherTests */,
+				35D323E81C03090100520CB5 /* SherryWeatherUITests */,
+				35D323C71C03090100520CB5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		35D323C71C03090100520CB5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				35D323C61C03090100520CB5 /* SherryWeather.app */,
+				35D323DA1C03090100520CB5 /* SherryWeatherTests.xctest */,
+				35D323E51C03090100520CB5 /* SherryWeatherUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		35D323C81C03090100520CB5 /* SherryWeather */ = {
+			isa = PBXGroup;
+			children = (
+				35D323C91C03090100520CB5 /* AppDelegate.swift */,
+				35D323CB1C03090100520CB5 /* ViewController.swift */,
+				35D323CD1C03090100520CB5 /* Main.storyboard */,
+				35D323D01C03090100520CB5 /* Assets.xcassets */,
+				35D323D21C03090100520CB5 /* LaunchScreen.storyboard */,
+				35D323D51C03090100520CB5 /* Info.plist */,
+				359DFAD91C075E3F00CD7642 /* WeatherModel.swift */,
+			);
+			path = SherryWeather;
+			sourceTree = "<group>";
+		};
+		35D323DD1C03090100520CB5 /* SherryWeatherTests */ = {
+			isa = PBXGroup;
+			children = (
+				35D323DE1C03090100520CB5 /* SherryWeatherTests.swift */,
+				35D323E01C03090100520CB5 /* Info.plist */,
+			);
+			path = SherryWeatherTests;
+			sourceTree = "<group>";
+		};
+		35D323E81C03090100520CB5 /* SherryWeatherUITests */ = {
+			isa = PBXGroup;
+			children = (
+				35D323E91C03090100520CB5 /* SherryWeatherUITests.swift */,
+				35D323EB1C03090100520CB5 /* Info.plist */,
+			);
+			path = SherryWeatherUITests;
+			sourceTree = "<group>";
+		};
+		35D323F81C0309F600520CB5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				35D324021C0309F600520CB5 /* Alamofire.framework */,
+				35D324041C0309F600520CB5 /* Alamofire iOS Tests.xctest */,
+				35D324061C0309F600520CB5 /* Alamofire.framework */,
+				35D324081C0309F600520CB5 /* Alamofire OSX Tests.xctest */,
+				35D3240A1C0309F600520CB5 /* Alamofire.framework */,
+				35D3240C1C0309F600520CB5 /* Alamofire tvOS Tests.xctest */,
+				35D3240E1C0309F600520CB5 /* Alamofire.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		35D323C51C03090100520CB5 /* SherryWeather */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 35D323EE1C03090100520CB5 /* Build configuration list for PBXNativeTarget "SherryWeather" */;
+			buildPhases = (
+				35D323C21C03090100520CB5 /* Sources */,
+				35D323C31C03090100520CB5 /* Frameworks */,
+				35D323C41C03090100520CB5 /* Resources */,
+				35D324131C030A4B00520CB5 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				35D324121C030A4A00520CB5 /* PBXTargetDependency */,
+			);
+			name = SherryWeather;
+			productName = SherryWeather;
+			productReference = 35D323C61C03090100520CB5 /* SherryWeather.app */;
+			productType = "com.apple.product-type.application";
+		};
+		35D323D91C03090100520CB5 /* SherryWeatherTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 35D323F11C03090100520CB5 /* Build configuration list for PBXNativeTarget "SherryWeatherTests" */;
+			buildPhases = (
+				35D323D61C03090100520CB5 /* Sources */,
+				35D323D71C03090100520CB5 /* Frameworks */,
+				35D323D81C03090100520CB5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				35D323DC1C03090100520CB5 /* PBXTargetDependency */,
+			);
+			name = SherryWeatherTests;
+			productName = SherryWeatherTests;
+			productReference = 35D323DA1C03090100520CB5 /* SherryWeatherTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		35D323E41C03090100520CB5 /* SherryWeatherUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 35D323F41C03090100520CB5 /* Build configuration list for PBXNativeTarget "SherryWeatherUITests" */;
+			buildPhases = (
+				35D323E11C03090100520CB5 /* Sources */,
+				35D323E21C03090100520CB5 /* Frameworks */,
+				35D323E31C03090100520CB5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				35D323E71C03090100520CB5 /* PBXTargetDependency */,
+			);
+			name = SherryWeatherUITests;
+			productName = SherryWeatherUITests;
+			productReference = 35D323E51C03090100520CB5 /* SherryWeatherUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		35D323BE1C03090100520CB5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0710;
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = SherryTeam;
+				TargetAttributes = {
+					35D323C51C03090100520CB5 = {
+						CreatedOnToolsVersion = 7.1.1;
+						DevelopmentTeam = 93UBSK8PYK;
+					};
+					35D323D91C03090100520CB5 = {
+						CreatedOnToolsVersion = 7.1.1;
+						DevelopmentTeam = 93UBSK8PYK;
+						TestTargetID = 35D323C51C03090100520CB5;
+					};
+					35D323E41C03090100520CB5 = {
+						CreatedOnToolsVersion = 7.1.1;
+						DevelopmentTeam = 93UBSK8PYK;
+						TestTargetID = 35D323C51C03090100520CB5;
+					};
+				};
+			};
+			buildConfigurationList = 35D323C11C03090100520CB5 /* Build configuration list for PBXProject "SherryWeather" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 35D323BD1C03090100520CB5;
+			productRefGroup = 35D323C71C03090100520CB5 /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 35D323F81C0309F600520CB5 /* Products */;
+					ProjectRef = 35D323F71C0309F600520CB5 /* Alamofire.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				35D323C51C03090100520CB5 /* SherryWeather */,
+				35D323D91C03090100520CB5 /* SherryWeatherTests */,
+				35D323E41C03090100520CB5 /* SherryWeatherUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		35D324021C0309F600520CB5 /* Alamofire.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Alamofire.framework;
+			remoteRef = 35D324011C0309F600520CB5 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		35D324041C0309F600520CB5 /* Alamofire iOS Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "Alamofire iOS Tests.xctest";
+			remoteRef = 35D324031C0309F600520CB5 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		35D324061C0309F600520CB5 /* Alamofire.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Alamofire.framework;
+			remoteRef = 35D324051C0309F600520CB5 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		35D324081C0309F600520CB5 /* Alamofire OSX Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "Alamofire OSX Tests.xctest";
+			remoteRef = 35D324071C0309F600520CB5 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		35D3240A1C0309F600520CB5 /* Alamofire.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Alamofire.framework;
+			remoteRef = 35D324091C0309F600520CB5 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		35D3240C1C0309F600520CB5 /* Alamofire tvOS Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "Alamofire tvOS Tests.xctest";
+			remoteRef = 35D3240B1C0309F600520CB5 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		35D3240E1C0309F600520CB5 /* Alamofire.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Alamofire.framework;
+			remoteRef = 35D3240D1C0309F600520CB5 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		35D323C41C03090100520CB5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				35D323D41C03090100520CB5 /* LaunchScreen.storyboard in Resources */,
+				35D323D11C03090100520CB5 /* Assets.xcassets in Resources */,
+				35D323CF1C03090100520CB5 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		35D323D81C03090100520CB5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		35D323E31C03090100520CB5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		35D323C21C03090100520CB5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				35D324151C030A6C00520CB5 /* SwiftyJSON.swift in Sources */,
+				35D323CC1C03090100520CB5 /* ViewController.swift in Sources */,
+				359DFADA1C075E3F00CD7642 /* WeatherModel.swift in Sources */,
+				35D323CA1C03090100520CB5 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		35D323D61C03090100520CB5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				35D323DF1C03090100520CB5 /* SherryWeatherTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		35D323E11C03090100520CB5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				35D323EA1C03090100520CB5 /* SherryWeatherUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		35D323DC1C03090100520CB5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 35D323C51C03090100520CB5 /* SherryWeather */;
+			targetProxy = 35D323DB1C03090100520CB5 /* PBXContainerItemProxy */;
+		};
+		35D323E71C03090100520CB5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 35D323C51C03090100520CB5 /* SherryWeather */;
+			targetProxy = 35D323E61C03090100520CB5 /* PBXContainerItemProxy */;
+		};
+		35D324121C030A4A00520CB5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Alamofire iOS";
+			targetProxy = 35D324111C030A4A00520CB5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		35D323CD1C03090100520CB5 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				35D323CE1C03090100520CB5 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		35D323D21C03090100520CB5 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				35D323D31C03090100520CB5 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		35D323EC1C03090100520CB5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		35D323ED1C03090100520CB5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		35D323EF1C03090100520CB5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				INFOPLIST_FILE = SherryWeather/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.SherryTeam.SherryWeather;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		35D323F01C03090100520CB5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				INFOPLIST_FILE = SherryWeather/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.SherryTeam.SherryWeather;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		35D323F21C03090100520CB5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = SherryWeatherTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.SherryTeam.SherryWeatherTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SherryWeather.app/SherryWeather";
+			};
+			name = Debug;
+		};
+		35D323F31C03090100520CB5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = SherryWeatherTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.SherryTeam.SherryWeatherTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SherryWeather.app/SherryWeather";
+			};
+			name = Release;
+		};
+		35D323F51C03090100520CB5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = SherryWeatherUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.SherryTeam.SherryWeatherUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = SherryWeather;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		35D323F61C03090100520CB5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = SherryWeatherUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.SherryTeam.SherryWeatherUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = SherryWeather;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		35D323C11C03090100520CB5 /* Build configuration list for PBXProject "SherryWeather" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				35D323EC1C03090100520CB5 /* Debug */,
+				35D323ED1C03090100520CB5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		35D323EE1C03090100520CB5 /* Build configuration list for PBXNativeTarget "SherryWeather" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				35D323EF1C03090100520CB5 /* Debug */,
+				35D323F01C03090100520CB5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		35D323F11C03090100520CB5 /* Build configuration list for PBXNativeTarget "SherryWeatherTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				35D323F21C03090100520CB5 /* Debug */,
+				35D323F31C03090100520CB5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		35D323F41C03090100520CB5 /* Build configuration list for PBXNativeTarget "SherryWeatherUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				35D323F51C03090100520CB5 /* Debug */,
+				35D323F61C03090100520CB5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 35D323BE1C03090100520CB5 /* Project object */;
+}
