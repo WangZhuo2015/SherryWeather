@@ -9,7 +9,7 @@
 import Foundation
 import Alamofire
 class WeatherModel{
-    class func getWeatherDataWithApiKey(url:NSURL,apiKey:String,cityID:String)->[simpleWeatherData]{
+    class func getWeatherDataWithApiKey(url:NSURL,apiKey:String,cityID:String,processData:([simpleWeatherData])->Void){
         var dataArray = [simpleWeatherData]()
         
         Alamofire.request(.GET, url, parameters: ["cityid":cityID], encoding: .URL , headers: ["apikey":apiKey]).responseJSON(){(result) in
@@ -38,14 +38,12 @@ class WeatherModel{
                 let windDirection:String? = dayForcast["wind"]!["dir"].string
                 let windForce:String? = dayForcast["wind"]!["sc"].string
                 
-                
-                
+
                 let tempData = simpleWeatherData(cityName: cityName, time: time, hTemp: hTemp, lTemp: lTemp, conditionD: conditionD, conditionDCode: conditionDCode, conditionN: conditionN, conditionNCode: conditionNCode, windDirection: windDirection, windForce: windForce)
                 dataArray.append(tempData)
             }
-            print("数组内容如下:\n \(dataArray)")
+            processData(dataArray)
         }
-        return dataArray
     }
     //函数结束
 
